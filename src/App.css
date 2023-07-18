@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+
+
+
+
+.card{
+  cursor: pointer;
+  border-radius: 20px !important; /* Rounded corners */
+
+}
+
+.card.selected {
+  background-color: #f0f0f0 !important;
+}
+
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .recipe {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.container {
+  margin-top: 50px; /* відступ зверху */
+  margin-bottom: 50px; /* відступ знизу */
+}
