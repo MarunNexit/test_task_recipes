@@ -1,3 +1,19 @@
+# Project Description:
+
+This is a recipe application built using React and Zustand state management. The application allows users to browse and interact with a collection of recipes. It provides the following features:
+
+Recipe List: The application fetches recipes from an external API (Punk API) using the fetchRecipes function from the Zustand store. The recipes are displayed as cards in a responsive grid layout using the RecipeCard component.
+
+Pagination and Lazy Loading: The recipe list is paginated, and initially, 15 recipes are rendered. As the user scrolls down to the bottom of the list, additional recipes are lazily loaded from the API and added to the rendered list. This ensures a smooth browsing experience while maintaining a total of 15 rendered recipes on the screen.
+
+Recipe Details: Users can click on a recipe card to view its details on a separate page. The recipe details page is implemented using the React Router, where each recipe has a unique URL based on its ID.
+
+Selecting and Deleting Recipes: Users can select multiple recipes by clicking on them. Selected recipes are stored in the selectedRecipes state in the Zustand store. The user can then delete the selected recipes by clicking the "Delete" button.
+
+Zustand State Management: The application uses the Zustand library for state management. The Zustand store provides functions to fetch recipes, select and delete recipes, and maintains the state of the recipes, selected recipes, and total recipe count.
+
+The project structure follows a component-based architecture, where reusable components like RecipeCard and RecipePage are used to display recipe-related information.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
